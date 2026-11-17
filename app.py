@@ -37,7 +37,7 @@ def get_similarity(vec1, vec2):
     return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
 
 # 3. UI Input
-user_query = st.text_area("What are you looking for?", placeholder="e.g., Cheap lads weekend, under 3 hours, need good nightlife...")
+user_query = st.text_area("What are you looking for?", placeholder="e.g., Cheap couples weekend, under 3 hours, great for foodies...")
 
 if st.button("Find Matches") and user_query:
     with st.spinner("Decoding intent and matching..."):
