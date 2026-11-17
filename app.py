@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 embed_model = "models/gemini-embedding-001"
-text_model = genai.GenerativeModel('gemini-1.5-flash')
+text_model = genai.GenerativeModel('gemini-2.5-flash')
 
 st.set_page_config(page_title="Vague-Intent Matchmaker", layout="centered")
 st.title("✈️ Vague-Intent Matchmaker")
